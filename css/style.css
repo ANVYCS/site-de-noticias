@@ -1,0 +1,243 @@
+/** Configurando padrões do site **/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {  /* Background e fonte */
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
+ background: #fff url(../imgs/fundo.png) repeat-x;
+}
+
+ul {  /* lista */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {  /* link */
+  text-decoration: none;
+}
+
+/** Configurando strutura do site **/
+
+#container {  /* container principal */
+  width: 750px;
+  margin: 0 auto;
+}
+
+#topo {  /* topo do site */
+  height: 150px;
+  background: url(../imgs/detalhe-topo.png) no-repeat right top;
+  padding: 25px;
+}
+
+.logo {  /* Logo */
+  width: 152px;
+  height: 66px;
+  background: url(../imgs/logo.png) no-repeat center;
+  text-indent: -3000px;
+}
+
+/** Configurando barra de navegação **/
+
+#topo ul {  /* lista de navegação */ 
+  margin-top: 30px;
+  background: #b10333;
+  float: left;
+}
+
+#topo ul li {  /* item da lista de navegação */
+  float: left;
+}
+
+#topo ul a {  /* item da lista de navegação */
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.3em;
+  line-height: 2.1em;
+  text-decoration: none;
+  color: #fff;
+  background: url(../imgs/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {  /* item da lista de navegação */
+  background: none;
+}
+
+#topo ul a:hover {  /* lista de navegação ao passar o mouse */
+  background: #69001d;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.mundo #navegacao a#mundo,
+body.fotos #navegacao a#fotos  {  /* item da lista de navegação */
+  color: #fff;
+  background: #de003e;
+  cursor: text;
+}
+
+/** Configurando layout de três colunas **/
+
+#conteudo {  /* conteúdo */
+  margin-top: 60px;
+  float: left;
+  background: #f5f5f5;
+}
+
+#primario {  /* coluna primária */
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+
+#secundario {  /* coluna secundária */
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 15px;
+}
+
+#lateral {  /* coluna lateral */
+  width: 180px;
+  float: left;
+  margin: 0 0 20px -750px;
+}
+
+/** Caixa **/
+
+.caixa {   /* caixa */
+  margin: 10px 0;
+  padding: 5px;
+  background: #f3f3f3 url(..imgs/fundo-caixa.png);
+}
+
+
+h2 {   /* título */
+  font-size: 1em;
+  background: #294c71;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.caixa-conteudo {   /* conteúdo da caixa */
+  padding: 5px;
+  margin-top: 5px;
+  background: #fff;
+}
+
+/** Formatar menus laterais **/
+
+#lateral ul a {  /* item da lista de navegação */
+ font-size: 0.9em;
+ padding: 3px;
+ display: block;
+ line-height: 30px;
+ color: #000;
+ border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {  /* lista de navegação ao passar o mouse */
+  color: #a1a1a1;
+  background: #f9f9f9 url(../imgs/marcador.png) no-repeat left center;
+  padding-left: 20px;
+}
+
+/** Formatar formulario **/
+
+label {   /* label */
+  display: block;
+  cursor: pointer;
+}
+
+input {   /* input */
+  padding: 5px;
+  width: 125px;
+  font-size: 0.9em;
+  background: #fff;
+}
+
+input.submit {   /* input submit */
+  width: 80px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+  margin-top: 5px;
+}
+
+/** Formatando imagens **/
+
+img.imagem-principal {   /* imagem principal */
+  width: 98%;
+  border: 3px solid #dfdfdf
+}
+
+/** Formatando cabeçalho **/
+
+h3 {   /* título h3 */
+  text-align: center;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+h3.destaque {  /* título h3 */
+  background: #b10333;
+  color: #fff;
+}
+
+/** Formatando lista de noticias **/
+
+#lista-noticias li {  /* item da lista de noticias */
+  padding: 2px; 
+  border-bottom: 1px solid #ccc;
+  height: 62px;
+}
+
+#lista-noticias li a img {   /* imagem da lista de noticias */
+  float: left;
+  margin: 5px;
+}
+
+#lista-noticias li a {   /* link da lista de noticias */
+  text-decoration: none; 
+}
+
+#lista-noticias li a h3 {   /* título da lista de noticias */
+  font-size: 0.8em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+#lista-noticias li a p {   /* texto da lista de noticias */
+  font-size: 0.7em;
+}
+
+#lista-noticias li:hover {   /* item da lista de noticias ao passar o mouse */
+  background: #eee;
+  cursor: pointer;
+}
+
+/** Rodape **/
+
+#container-rodape {  /* container do rodapé */
+  padding: 20px;
+  background: #294c71;
+}
+
+#rodape {  /* rodapé */
+  color: #fff;
+  margin: 0px auto;
+  width: 750px;
+  text-align: center;
+}
+
+#rodape a {  /* link do rodapé */
+  color: #fff;
+}
+
+
+/*** Desenvolvido por Yuri C. de Oliveira ***/
